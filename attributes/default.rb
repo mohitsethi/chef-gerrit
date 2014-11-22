@@ -31,7 +31,8 @@ default['gerrit']['group'] = "gerrit"
 default['gerrit']['home'] = "/var/gerrit"
 default['gerrit']['install_dir'] = "#{node['gerrit']['home']}/review"
 
-default['gerrit']['auth']['type'] = "OPENID"
+#default['gerrit']['auth']['type'] = "OPENID"
+default['gerrit']['auth']['type'] = "DEVELOPMENT_BECOME_ANY_ACCOUNT"
 
 default['gerrit']['sendemail']['smtpServer'] = "localhost"
 
