@@ -1,0 +1,21 @@
+{
+  "build-essential": {
+    "compile_time": "false"
+  },
+  "gerrit": {
+    "auth": {
+      "registerEmailPrivateKey" : "123",
+      "restTokenPrivateKey" : "123"
+        }
+  },
+  "mysql":{
+   "server_debian_password": "redhat",
+   "server_root_password": "redhat",
+   "server_repl_password": "redhat"
+  },
+  "run_list": [
+                "recipe[mysql]",
+                "recipe[gerrit]"
+              ]
+}
+
